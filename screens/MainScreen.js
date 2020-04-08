@@ -10,6 +10,7 @@ const myFood = <Icon name="lemon-o" size={30} color="#7a42f4" />;
 import HomeScreen from './HomeScreen';
 import SettingsScreen from './SettingsScreen';
 import FoodScreen from './FoodScreen';
+import FoodStackScreen from './FoodStackScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -30,7 +31,7 @@ const MainScreen = () => {
       />
       <Tab.Screen
         name="Food"
-        component={FoodScreen}
+        component={FoodStackScreen}
         options={{
           tabBarLabel: 'Food Search',
           tabBarIcon: () => myFood,
