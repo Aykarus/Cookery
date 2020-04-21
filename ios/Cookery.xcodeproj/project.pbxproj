@@ -20,6 +20,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* CookeryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CookeryTests.m */; };
 		329F8B209C9F26623E72F71D /* libPods-Cookery-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E410D43233FC71B7244FFE80 /* libPods-Cookery-tvOSTests.a */; };
 		4F0C0DFE6D9859316FD3754D /* libPods-Cookery-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B26FDEBFEF4248DED1077F1E /* libPods-Cookery-tvOS.a */; };
+		94D26F5A244CE6BF005B3A41 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94D26F59244CE6BF005B3A41 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		9427C147243C23EE000FE8BE /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		9427C148243C23EE000FE8BE /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		9427C149243C23EE000FE8BE /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		94D26F59244CE6BF005B3A41 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		997F5C7941E4B79C479B78F6 /* Pods-Cookery-CookeryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cookery-CookeryTests.release.xcconfig"; path = "Target Support Files/Pods-Cookery-CookeryTests/Pods-Cookery-CookeryTests.release.xcconfig"; sourceTree = "<group>"; };
 		9A9B3A01D2F136654BB77831 /* Pods-Cookery-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cookery-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Cookery-tvOSTests/Pods-Cookery-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B26FDEBFEF4248DED1077F1E /* libPods-Cookery-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cookery-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +143,7 @@
 		13B07FAE1A68108700A75B9A /* Cookery */ = {
 			isa = PBXGroup;
 			children = (
+				94D26F59244CE6BF005B3A41 /* GoogleService-Info.plist */,
 				9427C139243C236A000FE8BE /* Fonts */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -382,6 +385,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				94D26F5A244CE6BF005B3A41 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
