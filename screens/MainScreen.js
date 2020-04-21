@@ -4,12 +4,16 @@ import {StyleSheet, Text, View} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/FontAwesome';
-const myIcon = <Icon name="circle-thin" size={30} color="#7a42f4" />;
-const mySets = <Icon name="square-o" size={30} color="#7a42f4" />;
-const myFood = <Icon name="lemon-o" size={30} color="#7a42f4" />;
 import HomeScreen from './HomeScreen';
 import SettingsScreen from './SettingsScreen';
 import FoodScreen from './FoodScreen';
+import FoodStackScreen from './FoodStackScreen';
+import FoodMapScreen from './FoodMapScreen';
+
+const myIcon = <Icon name="circle-thin" size={30} color="#7a42f4" />;
+const mySets = <Icon name="square-o" size={30} color="#7a42f4" />;
+const myFood = <Icon name="lemon-o" size={30} color="#7a42f4" />;
+const myMap = <Icon name="map-o" size={30} color="#7a42f4" />;
 
 const Tab = createBottomTabNavigator();
 
@@ -29,8 +33,16 @@ const MainScreen = () => {
         }}
       />
       <Tab.Screen
+        name="Map"
+        component={FoodMapScreen}
+        options={{
+          tabBarLabel: 'Map',
+          tabBarIcon: () => myMap,
+        }}
+      />
+      <Tab.Screen
         name="Food"
-        component={FoodScreen}
+        component={FoodStackScreen}
         options={{
           tabBarLabel: 'Food Search',
           tabBarIcon: () => myFood,

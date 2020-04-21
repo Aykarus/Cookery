@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1029438330318",
+    "firebase_url": "https://college-app-f76c7.firebaseio.com",
+    "project_id": "college-app-f76c7",
+    "storage_bucket": "college-app-f76c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029438330318:android:89c6f4bbfa4c82aae7c79f",
+        "android_client_info": {
+          "package_name": "com.cookery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029438330318-1sih7a16r59er41ovuuprt04vjrq2r3t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnVWhRtDfXuTOxwT1-Scs0CUeZz3oRr_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029438330318-1sih7a16r59er41ovuuprt04vjrq2r3t.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1029438330318-1a4clr6m771i9j9gbe48bm9c0firhrdl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cookery"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
