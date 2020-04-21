@@ -7,6 +7,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 const myHeart = <Icon name="search" size={20} color="#900" />;
 
 const FoodScreen = ({navigation}) => {
+  //Some Hardcoded inputs for testing and reducing api calls
   const [recipies, setRecipies] = useState([
     {
       id: '1',
@@ -96,35 +97,21 @@ const FoodScreen = ({navigation}) => {
         },
       ],
     },
-    // {
-    //   id: '3',
-    //   title: 'Dulce De Leche Cheesecake',
-    //   img: 'https://spoonacular.com/recipeImages/1335193-556x370.jpg',
-    //   instructions:
-    //     'Put in a greased and floured cake pan. Bake at 325-350 degrees for 1 1/2 hours. Save some cherries and nuts to decorate the top with. This makes a large cake and can be kept in the refrigerator for days.',
-    // },
-    // {
-    //   id: '4',
-    //   title: 'Applesauce Cake',
-    //   img: 'https://spoonacular.com/recipeImages/632632-556x370.jpg',
-    //   instructions:
-    //     'Put in a greased and floured cake pan. Bake at 325-350 degrees for 1 1/2 hours. Save some cherries and nuts to decorate the top with. This makes a large cake and can be kept in the refrigerator for days.',
-    // },
   ]);
 
   //Comment out to use API
-  // useEffect(() => {
-  //   fetch(
-  //     'https://api.spoonacular.com/recipes/random?number=4&tags=vegetarian,dessert&apiKey=4e1e24294a2946d29a5d082508642059',
-  //   )
-  //     .then(response => response.json())
-  //     .then(json => setRecipies(json.recipes))
-  //     .catch(error => console.error(error));
-  // }, []);
+  useEffect(() => {
+    fetch(
+      'https://api.spoonacular.com/recipes/random?number=4&tags=vegetarian,dessert&apiKey=4e1e24294a2946d29a5d082508642059',
+    )
+      .then(response => response.json())
+      .then(json => setRecipies(json.recipes))
+      .catch(error => console.error(error));
+  }, []);
 
   function serach(input) {
     fetch(
-      `https://api.spoonacular.com/recipes/random?number=1&tags=${input}&apiKey=4e1e24294a2946d29a5d082508642059`,
+      `https://api.spoonacular.com/recipes/random?number=4&tags=${input}&apiKey=4e1e24294a2946d29a5d082508642059`,
     )
       .then(response => response.json())
       .then(json => setRecipies(json.recipes))

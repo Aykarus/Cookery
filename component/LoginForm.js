@@ -34,10 +34,6 @@ const LoginForm = () => {
         console.log('User signed in!');
       })
       .catch(error => {
-        if (error.code === 'auth/email-already-in-use') {
-          console.log('That email address is already in use!');
-        }
-
         if (error.code === 'auth/invalid-email') {
           setLog('That email address is invalid!');
           console.log('That email address is invalid!');
@@ -56,26 +52,6 @@ const LoginForm = () => {
   }, []);
 
   if (initializing) return null;
-
-  // auth()
-  //   .createUserWithEmailAndPassword(
-  //     'sarah.lane@gmail.com',
-  //     'SuperSecretPassword!',
-  //   )
-  //   .then(() => {
-  //     console.log('User account created & signed in!');
-  //   })
-  //   .catch(error => {
-  //     if (error.code === 'auth/email-already-in-use') {
-  //       console.log('That email address is already in use!');
-  //     }
-
-  //     if (error.code === 'auth/invalid-email') {
-  //       console.log('That email address is invalid!');
-  //     }
-
-  //     console.error(error);
-  //   });
 
   return (
     <View style={styles.center}>
