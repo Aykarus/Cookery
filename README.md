@@ -2,8 +2,8 @@
 
 A React Native cooking and recipe app
 
-Chester Cari
-Muhammad Mooraja
+Members:
+Chester Cari, Muhammad Mooraja
 
 ---
 Current Status: Depreciated
